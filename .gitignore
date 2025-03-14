@@ -1,0 +1,41 @@
+# Python virtual environments
+venv/
+env/
+ENV/
+.env/
+.venv/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Models - if they're large, consider excluding them
+# models/*.pt
+
+# Temporary files
+temp_image.jpg
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Streamlit specific
+.streamlit/secrets.toml
