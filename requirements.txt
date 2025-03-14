@@ -1,0 +1,7 @@
+streamlit
+opencv-python
+ultralytics
+ensemble-boxes
+matplotlib
+numpy
+pandas
