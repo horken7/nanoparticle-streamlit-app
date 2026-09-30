@@ -1,6 +1,11 @@
+import os
+
+# Ultralytics writes settings to the user config dir, which is read-only on
+# Streamlit Cloud. Point it at a writable location before importing.
+os.environ.setdefault("YOLO_CONFIG_DIR", "/tmp/Ultralytics")
+
 from ultralytics import YOLO
 import cv2
-import os
 import numpy as np
 from ensemble_boxes import soft_nms
 

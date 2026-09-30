@@ -178,7 +178,7 @@ def main():
         image = cv2.imdecode(np.frombuffer(uploaded_file.read(), np.uint8), cv2.IMREAD_COLOR)
         
         # Display original image
-        st.image(image, channels="BGR", caption="Uploaded Image", use_column_width=True)
+        st.image(image, channels="BGR", caption="Uploaded Image", width="stretch")
 
         # Perform detection
         with st.spinner("Detecting nanoparticles..."):
@@ -197,7 +197,7 @@ def main():
             
             # Display annotated image
             annotated_img = draw_detection_boxes(image, results)
-            st.image(annotated_img, channels="BGR", caption="Detection Results", use_column_width=True)
+            st.image(annotated_img, channels="BGR", caption="Detection Results", width="stretch")
             
             # Class distribution chart
             st.subheader("Class Distribution")
